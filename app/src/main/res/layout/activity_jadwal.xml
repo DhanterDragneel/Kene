@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_mix2"
+    tools:context=".Jadwal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_white"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:id="@+id/tablelayoutid"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TableRow
+                        android:id="@+id/rowlay"
+                        android:background="@android:color/holo_blue_light"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hari"
+                            android:fontFamily="sans-serif-black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mata Kuliah"
+                            android:fontFamily="sans-serif-black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dosen Pengampu"
+                            android:fontFamily="sans-serif-black"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#FFFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/H1"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="Senin"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Perancangan dan Administrasi Jaringan"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Hendrik Kusbandono, S.Kom., M.Kom."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <TextView
+                            android:id="@+id/MK1P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Praktik Perancangan dan Administrasi Jaringan"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Hendrik Kusbandono, S.Kom., M.Kom."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/H2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="Selasa"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Pemrograman Berbasis Mobile "
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Susilo Veri Yulianto, S.Kom., M.T."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <TextView
+                            android:id="@+id/MK2P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Praktik Pemrograman Berbasis Mobile"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Susilo Veri Yulianto, S.Kom., M.T"
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Manajemen Proyek"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Tri Lestariningsih, S.Kom., M.Kom"
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/H3"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rabu"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Manajemen Proyek"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Tri Lestariningsih, S.Kom., M.Kom"
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/H4"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kamis"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Desain dan Analisis sistem"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Lutfiyah Dwi Setia, S.Kom., M.Kom."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <TextView
+                            android:id="@+id/MK5P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Praktik Desain dan Analisis sistem"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn55"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lutfiyah Dwi Setia, S.Kom., M.Kom."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/H5"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="Jumat"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="sans-serif"/>
+                        <TextView
+                            android:id="@+id/MK6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:text="Sistem Komputasi Awan"
+                            android:fontFamily="sans-serif-medium"/>
+                        <TextView
+                            android:id="@+id/Dsn6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"
+                            android:text="Amrul Hinung Prihamayu, S.Si., M.Cs."
+                            android:fontFamily="sans-serif-medium"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="102dp"
+                        android:background="#FFF"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/MK6P"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Praktik Komputasi Awan"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/Dsn66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Amrul Hinung Prihamayu, S.Si., M.Cs."
+                            android:textColor="@color/colorBlack" />
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
