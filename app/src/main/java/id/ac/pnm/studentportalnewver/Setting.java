@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class Setting extends AppCompatActivity {
     TextView npmkene;
     String npm;
-    Button btnUbahDtdr;
+    Button btnUbahDtdr, btnubhPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,16 @@ public class Setting extends AppCompatActivity {
                 String npm = npmkene.getText().toString();
                 Intent intent = new Intent(Setting.this, UbahDataDiri.class);
                 intent.putExtra("NPM_ubahdtdiri", npm);
+                startActivity(intent);
+            }
+        });
+        btnubhPassword = (Button) findViewById(R.id.btnUbahpass);
+        btnubhPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String npm = npmkene.getText().toString();
+                Intent intent = new Intent(Setting.this, UbahPassword.class);
+                intent.putExtra("NPM_ubhpassword", npm);
                 startActivity(intent);
             }
         });
